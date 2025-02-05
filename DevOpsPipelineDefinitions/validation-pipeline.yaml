@@ -51,7 +51,7 @@ extends:
             scriptType: batch
             scriptLocation: inlineScript
             inlineScript: |
-              az storage blob download-batch --auth-mode login -d . --pattern * -s servicewrapper --output none --account-name $(WinGetSvc.ValidationStorageAccountName)
+              az storage blob download-batch --auth-mode login -d . --pattern * -s servicewrapper --output none --account-name $(ValidationStorageAccountName)
             addSpnToEnvironment: true
 
         - task: CmdLine@2
@@ -83,12 +83,12 @@ extends:
             addSpnToEnvironment: true
             failOnStandardError: true
           env:
-            ValidationStorageAccountName: $(WinGetSvc.ValidationStorageAccountName)
-            StorageManagedIdentityClientId: $(WinGetSvc.StorageManagedIdentityClientId)
+            ValidationStorageAccountName: $(ValidationStorageAccountName)
+            StorageManagedIdentityClientId: $(StorageManagedIdentityClientId)
+            WinGet:AppConfig:PrimaryEndpoint: $(AppConfigPrimaryEndpoint)
+            WinGet:AppConfig:SecondaryEndpoint: $(AppConfigSecondaryEndpoint)
+            DIApplicationInsightKey: $(DIApplicationInsightKey)
             ExecutionEnvironment: $(WinGetSvc.ExecutionEnvironment)
-            DIApplicationInsightKey: $(WinGetSvc.ApplicationInsight)
-            WinGet:AppConfig:PrimaryEndpoint: $(WinGetSvc.AppConfigPrimaryEndpoint)
-            WinGet:AppConfig:SecondaryEndpoint: $(WinGetSvc.AppConfigSecondaryEndpoint)
 
         # Validates manifest integrity.
         - task: AzureCLI@2
@@ -102,13 +102,13 @@ extends:
             addSpnToEnvironment: true
             failOnStandardError: true
           env:
-            ValidationStorageAccountName: $(WinGetSvc.ValidationStorageAccountName)
-            CacheStorageAccountName: $(WinGetSvc.CacheStorageAccountName)
-            StorageManagedIdentityClientId: $(WinGetSvc.StorageManagedIdentityClientId)
-            DIApplicationInsightKey: $(WinGetSvc.ApplicationInsight)
+            ValidationStorageAccountName: $(ValidationStorageAccountName)
+            CacheStorageAccountName: $(CacheStorageAccountName)
+            StorageManagedIdentityClientId: $(StorageManagedIdentityClientId)
+            WinGet:AppConfig:PrimaryEndpoint: $(AppConfigPrimaryEndpoint)
+            WinGet:AppConfig:SecondaryEndpoint: $(AppConfigSecondaryEndpoint)
+            DIApplicationInsightKey: $(DIApplicationInsightKey)
             ExecutionEnvironment: $(WinGetSvc.ExecutionEnvironment)
-            WinGet:AppConfig:PrimaryEndpoint: $(WinGetSvc.AppConfigPrimaryEndpoint)
-            WinGet:AppConfig:SecondaryEndpoint: $(WinGetSvc.AppConfigSecondaryEndpoint)
 
       # Agentless phase. Depends on previous job.
       - job: 'ContentValidation'
@@ -315,7 +315,6 @@ extends:
         # Set label in GitHub PullRequest.
         - task: AzureFunction@1
           displayName: 'Set Label'
-          condition: eq(variables['WinGet.RepositoryType'], 'GitHub')
           inputs:
             function: '$(LabelEndpointSecret)'
             key: '$(LabelKeySecret)'
