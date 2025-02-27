@@ -1,7 +1,9 @@
 # Validation pipeline for manifest on pull requests.
+variables:
+  WinGetSvc.PullRequestNumber: $[coalesce(variables.ValidatePullRequestNumber, variables['System.PullRequest.PullRequestNumber'])]
 
 # Name of the run
-name: '$(Build.DefinitionName)-$(Build.DefinitionVersion)-$(System.PullRequest.PullRequestNumber)-$(Date:yyyyMMdd)-$(Rev:r)'
+name: '$(Build.DefinitionName)-$(Build.DefinitionVersion)-$(WinGetSvc.PullRequestNumber)-$(Date:yyyyMMdd)-$(Rev:r)'
 
 trigger: none
 pr:
@@ -42,6 +44,8 @@ extends:
         timeoutInMinutes: 0
 
         steps:
+        - checkout: self
+          persistCredentials: true
 
         # Downloads all the setup files and its dependencies.
         - task: AzureCLI@2
@@ -144,7 +148,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -168,7 +172,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -192,7 +196,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -230,7 +234,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -254,7 +258,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -292,7 +296,7 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
 
@@ -332,6 +336,6 @@ extends:
               "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "ValidationPipeline",
-              "pullRequestNumber": "$(System.PullRequest.PullRequestNumber)"
+              "pullRequestNumber": "$(WinGetSvc.PullRequestNumber)"
               }
             waitForCompletion: "true"
