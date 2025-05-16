@@ -123,7 +123,6 @@ extends:
               "jobId": "$(system.JobId)", 
               "timelineId": "$(system.TimelineId)", 
               "taskInstanceId": "$(system.TaskInstanceId)",
-              "authToken": "$(system.AccessToken)",
               "repository": "$(build.repository.id)",
               "pipelineType": "CommitPipeline",
               }
@@ -160,7 +159,6 @@ extends:
               "jobId": "$(system.JobId)",
               "timelineId": "$(system.TimelineId)",
               "taskInstanceId": "$(system.TaskInstanceId)",
-              "authToken": "$(system.AccessToken)",
               "buildRepositoryId": "$(build.repository.id)",
               "commitTablePartitionKey": "$(CommitTablePartitionKey)",
               "commitTableRowKey": "$(CommitTableRowKey)",
@@ -237,7 +235,6 @@ extends:
               "jobId": "$(system.JobId)", 
               "timelineId": "$(system.TimelineId)", 
               "taskInstanceId": "$(system.TaskInstanceId)",
-              "authToken": "$(system.AccessToken)",
               "buildRepositoryId": "$(build.repository.id)",
               "taskIdentifier": "WaiverCommit"
               }
@@ -260,7 +257,6 @@ extends:
               "jobId": "$(system.JobId)", 
               "timelineId": "$(system.TimelineId)", 
               "taskInstanceId": "$(system.TaskInstanceId)",
-              "authToken": "$(system.AccessToken)",
               "buildRepositoryId": "$(build.repository.id)"
               }
             waitForCompletion: "true"
@@ -283,7 +279,6 @@ extends:
               "jobId": "$(system.JobId)", 
               "timelineId": "$(system.TimelineId)", 
               "taskInstanceId": "$(system.TaskInstanceId)",
-              "authToken": "$(system.AccessToken)",
               "buildRepositoryId": "$(build.repository.id)"
               }
             waitForCompletion: "true"
