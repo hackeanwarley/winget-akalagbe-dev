@@ -116,8 +116,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)", 
               "jobId": "$(system.JobId)", 
@@ -151,8 +149,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "pipelineType": "CommitPipeline",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
@@ -189,8 +185,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "pipelineType": "CommitPipeline",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)", 
@@ -227,8 +221,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "pipelineType": "CommitPipeline",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)", 
@@ -249,8 +241,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "pipelineType": "CommitPipeline",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)", 
@@ -271,8 +261,6 @@ extends:
               {
               "operationId": "$(Build.BuildNumber)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "pipelineType": "CommitPipeline",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)", 

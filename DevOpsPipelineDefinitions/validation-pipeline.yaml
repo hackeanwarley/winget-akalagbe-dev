@@ -139,8 +139,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -163,8 +161,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -187,8 +183,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -225,8 +219,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -249,8 +241,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -287,8 +277,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
@@ -327,8 +315,6 @@ extends:
               {
               "operationId": "$(WinGetSvc.OperationId)",
               "buildId": "$(Build.BuildId)",
-              "planUrl": "$(system.CollectionUri)",
-              "hubName": "$(system.HostType)",
               "projectId": "$(system.TeamProjectId)",
               "planId": "$(system.PlanId)",
               "jobId": "$(system.JobId)",
