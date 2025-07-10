@@ -1,0 +1,19 @@
+PackageIdentifier: IntegrationTests.Dependencies.AddedGood
+PackageVersion: 2.10.1
+PackageName: Visual Studio Code
+Publisher: WinGet Cache Test
+PackageUrl: https://code.visualstudio.com
+License: Copyright (C) Microsoft Corporation
+ShortDescription: Tests for when good dependencies are added.
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.65.0.msi
+  InstallerType: inno
+  InstallerSha256: 384D13E03F9A601B30274C386BC4DB382C4FC6EFFB03B4FFB2FA08FC95188BE5
+  Dependencies:
+    PackageDependencies:
+      - PackageIdentifier: IntegrationTests.Dependencies.A
+        MinimumVersion: 0.0.1
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
