@@ -1,0 +1,19 @@
+PackageIdentifier: IntegrationTests.InstallersScan.HashMismatch
+PackageName: HashMismatch
+Moniker: HashMismatch
+PackageVersion: 1.0
+Publisher: Constoso
+Author: Constoso
+License: MIT License
+LicenseUrl: https://github.com/microsoft/msix-packaging/blob/master/LICENSE
+MinimumOSVersion: 10.0.0.0
+PackageUrl: https://github.com/microsoft/msix-packaging/
+InstallerType: msi
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/AtomSetup-x64.exe
+  InstallerSha256: 09eebc165474969deea115a3cb6a3b88ca206e2c65975e76e6b7d891d1d6e648
+ShortDescription: Integration test for Hash Mismatch
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
