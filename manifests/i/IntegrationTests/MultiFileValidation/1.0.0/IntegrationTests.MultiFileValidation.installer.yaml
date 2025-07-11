@@ -1,0 +1,15 @@
+PackageIdentifier: IntegrationTests.MultiFileValidation
+PackageVersion: 1.0.0
+MinimumOSVersion: 10.0.0.0
+InstallerType: wix
+Installers:
+- Architecture: x86
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.58.0.msi
+  InstallerSha256: 8562A9BE470D8E3B484D13B1E3D2C5DF169EAD407ED8F2581C12180056C50928
+  ProductCode: '{77DA6D25-C4A0-44C4-AFBD-C1ABECDE3B3F}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Azure CLI (32-bit)
+    UpgradeCode: '{DFF82AF0-3F95-4AC9-8EFD-948604FDB028}'
+
+ManifestType: installer
+ManifestVersion: 1.5.0
