@@ -1,0 +1,18 @@
+PackageIdentifier: iドラゴンボールZ.ドラゴンボールZ
+PackageVersion: 1.46.1
+PackageName: Visual Studio Code
+Publisher: WinGet Cache Test
+PackageUrl: https://code.visualstudio.com
+License: Copyright (c) Microsoft Corporation
+ShortDescription: Test for international characters in the id and path.
+Moniker: vscode
+Commands:
+- code
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.58.0-x64.msi
+  InstallerSha256: 27C26B0EA7C3D3617C32CE32209EBBBAE5B8E5F1441084992660FFCE914551A8
+  InstallerType: inno
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
