@@ -1,0 +1,20 @@
+PackageIdentifier: IntegrationTests.ChineseCharacters
+PackageVersion: 1.0.0
+PackageName: Visual Studio Code
+Publisher: WinGet Cache Test
+License: Copyright (C) Microsoft Corporation
+MinimumOSVersion: 10.0.0.0
+PackageUrl: https://code.visualstudio.com
+ShortDescription: Test for when manifest contain Chinese characters 在很長時期內還充當東亞地區唯
+InstallerType: inno
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.58.0-x64.msi
+  InstallerSha256: 27C26B0EA7C3D3617C32CE32209EBBBAE5B8E5F1441084992660FFCE914551A8
+  ProductCode: '{B510ABB4-D1DB-4EC9-B631-30CD679E119C}'
+  AppsAndFeaturesEntries:
+  - DisplayName: Microsoft Azure CLI (64-bit)
+    UpgradeCode: '{90762FEC-9554-4729-A107-C6A8EA316698}'
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
