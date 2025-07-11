@@ -1,0 +1,18 @@
+PackageIdentifier: IntegrationTests.WinGetBotMentionTest.Waiver.WaiverAdd
+PackageVersion: 1.0.0
+PackageName: Visual Studio Code
+Publisher: WinGet Cache Test
+PackageUrl: https://code.visualstudio.com
+License: Copyright (c) Microsoft Corporation
+ShortDescription: Test for Risky Keywords. An additional phrase "doodoo" to trigger adult content warning.
+Moniker: vscode
+Commands:
+- code
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.10.1.msi
+  InstallerSha256: 6AB8ECDC9397791A075310CEE1EE17FBF6E72A0986A73C5D2D4567010254E8DC
+  InstallerType: inno
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
