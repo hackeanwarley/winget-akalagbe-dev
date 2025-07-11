@@ -1,0 +1,17 @@
+PackageIdentifier: IntegrationTests.Singleton
+PackageVersion: 1.0.0
+PackageName: WinGetTest
+Publisher: WinGet Cache Test
+License: Copyright (C) Microsoft Corporation
+MinimumOSVersion: 10.0.0.0
+PackageUrl: https://code.visualstudio.com
+InstallerType: msi
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.65.0.msi
+  InstallerType: inno
+  InstallerSha256: 384D13E03F9A601B30274C386BC4DB382C4FC6EFFB03B4FFB2FA08FC95188BE5
+PackageLocale: en-US
+ShortDescription: Test for when pipeline run is successful for pull request.
+ManifestType: singleton
+ManifestVersion: 1.5.0
