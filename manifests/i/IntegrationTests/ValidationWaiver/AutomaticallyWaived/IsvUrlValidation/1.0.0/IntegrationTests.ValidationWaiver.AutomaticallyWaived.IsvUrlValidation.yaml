@@ -4,15 +4,15 @@ PackageName: Visual Studio Code
 Publisher: Microsoft Corporation
 PackageUrl: https://code.visualstudio.com
 License: Copyright (c) Microsoft Corporation
-ShortDescription: This test must NOT have a waiver checked in.
+ShortDescription: This test must NOT have a waiver checked in. Modify the manifest to trigger ISV again. Since is a modify and URL already checked in it should be automatically waived.
 Moniker: vscode
 Commands:
 - code
 Installers:
 - Architecture: x64
-  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.z01.azurefd.net/tests/installers/azure-cli-2.14.1.msi
-  InstallerSha256: D06930CF9DD4033CEB58798EBF80B2964D0C6E38B10AB3A646EA2875E7C2417C
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.58.0.msi
+  InstallerSha256: 8562A9BE470D8E3B484D13B1E3D2C5DF169EAD407ED8F2581C12180056C50928
   InstallerType: inno
 PackageLocale: en-US
 ManifestType: singleton
-ManifestVersion: 1.0.0
+ManifestVersion: 1.5.0
