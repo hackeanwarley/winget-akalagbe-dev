@@ -1,0 +1,9 @@
+PackageIdentifier: IntegrationTests.MultiFileValidation
+PackageVersion: 1.0.0
+PackageName: 7zip MultifileFR
+Publisher: WinGet Cache Test
+ShortDescription: Free and open source file archiver with a high compression ratio. FRFR
+PackageLocale: fr-FR
+
+ManifestType: locale
+ManifestVersion: 1.5.0
