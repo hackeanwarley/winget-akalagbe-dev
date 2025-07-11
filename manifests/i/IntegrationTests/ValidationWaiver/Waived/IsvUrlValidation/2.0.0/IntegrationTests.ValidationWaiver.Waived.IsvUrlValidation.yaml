@@ -1,0 +1,18 @@
+PackageIdentifier: IntegrationTests.ValidationWaiver.Waived.IsvUrlValidation
+PackageVersion: 2.0.0
+PackageName: Visual Studio Code
+Publisher: Microsoft Corporation
+PackageUrl: https://code.visualstudio.com
+License: Copyright (c) Microsoft Corporation
+ShortDescription: Test manifest already waived. Version 1.0.0 should be already be waived in the repo.
+Moniker: vscode
+Commands:
+- code
+Installers:
+- Architecture: x64
+  InstallerUrl: https://winget-cache-test-fccxhrb9evdxdrem.b02.azurefd.net/tests/installers/DONOTMERGE/azure-cli-2.58.0.msi
+  InstallerSha256: 8562A9BE470D8E3B484D13B1E3D2C5DF169EAD407ED8F2581C12180056C50928
+  InstallerType: inno
+PackageLocale: en-US
+ManifestType: singleton
+ManifestVersion: 1.5.0
