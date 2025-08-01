@@ -5,7 +5,7 @@ Publisher: Github
 PackageUrl: https://atom.io/
 License: Copyright (c) 2020 GitHub Inc.
 LicenseUrl: https://help.github.com/en/github/site-policy/github-terms-of-service
-ShortDescription: A hackable text editor for the 21st Century.
+ShortDescription: A hackable text editor for the 21st Century. editting someting....
 Installers:
 - Architecture: x64
   InstallerUrl: https://atom.io/download/windows_x64
