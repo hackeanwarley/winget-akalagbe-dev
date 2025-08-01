@@ -3,7 +3,7 @@ PackageName: LastPass
 PackageVersion: 4.43.0.7
 Publisher: LogMeIn
 License: Copyright (c) LastPass 2008 - 2020 - All rights reserved.
-ShortDescription: Password manager web browser extension.
+ShortDescription: Password manager web browser extension. another one
 InstallerType: exe
 Installers:
 - Architecture: x64
